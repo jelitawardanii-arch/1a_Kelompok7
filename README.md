@@ -21,38 +21,43 @@
 
 ```txt
 praktikum_modul11/
-â”œâ”€â”€ sql/
-â”‚   â”œâ”€â”€ 01_database.sql                # Identifikasi DBMS & pembuatan database sistem_laundry
-â”‚   â”œâ”€â”€ 02_tabel.sql                   # DDL 8 tabel SIM-LAUNDRY (relasional + kolom JSON)
-â”‚   â”œâ”€â”€ 03_data_awal.sql               # DML data awal kategori, layanan JSON, layanan_objek & transaksi
-â”‚   â””â”€â”€ 04_pengujian_json.sql          # Pengujian JSON_EXTRACT, JSON_SET, JSON_REMOVE, JOIN & ROLLBACK
-â”œâ”€â”€ dokumentasi/
-â”‚   â”œâ”€â”€ perbandingan_dbms.docx         # Kerangka laporan perbandingan 3 DBMS
-â”‚   â”œâ”€â”€ analisis_objek.docx            # Kerangka laporan analisis basis data berorientasi objek
-â”‚   â”œâ”€â”€ lingkup_penerapan.docx         # Kerangka laporan analisis lingkup penerapan SIM-LAUNDRY
-â”‚   â””â”€â”€ hasil_pengujian.txt            # Log output eksekusi query MySQL 8.4.3
-â”œâ”€â”€ diagram/
-â”‚   â””â”€â”€ pemodelan_objek.png            # UML Class Diagram Layanan SIM-LAUNDRY
-â”œâ”€â”€ bukti/
-â”‚   â”œâ”€â”€ 01_identifikasi_dbms.png       # Screenshot CLI identifikasi versi, engine, charset & JSON
-â”‚   â”œâ”€â”€ 01_identifikasi_dbms_2.png     # Lanjutan identifikasi database aktif
-â”‚   â”œâ”€â”€ 02_pembuatan_tabel.png         # Screenshot CLI pembuatan tabel relasional & kolom JSON
-â”‚   â”œâ”€â”€ 02_pembuatan_tabel_2.png       # Lanjutan DDL tabel transaksi & DESCRIBE
-â”‚   â”œâ”€â”€ 03_insert_data_json.png        # Screenshot CLI pengisian data awal pengguna & kategori
-â”‚   â”œâ”€â”€ 03_insert_data_json_2.png      # Lanjutan pengisian data awal layanan JSON
-â”‚   â”œâ”€â”€ 03_insert_data_json_3.png      # Lanjutan pengisian layanan_objek & transaksi pesanan
-â”‚   â”œâ”€â”€ 03_insert_data_json_4.png      # Hasil SELECT verifikasi data awal
-â”‚   â”œâ”€â”€ 04_baca_atribut_json.png       # Screenshot CLI JSON_EXTRACT, JSON_UNQUOTE, dan ->>
-â”‚   â”œâ”€â”€ 05_manipulasi_json.png         # Screenshot CLI JSON_SET & JSON_REMOVE
-â”‚   â”œâ”€â”€ 06_pencarian_json.png          # Screenshot CLI pencarian atribut JSON & JSON_CONTAINS
-â”‚   â”œâ”€â”€ 07_fungsi_json_dan_objek.png   # Screenshot CLI JSON_OBJECT, JSON_ARRAY, JSON_VALID, JSON_LENGTH
-â”‚   â”œâ”€â”€ 07_fungsi_json_dan_objek_2.png # Lanjutan query layanan_objek & JOIN relasional
-â”‚   â”œâ”€â”€ 08_transaksi_rollback.png      # Screenshot CLI pengujian START TRANSACTION & ROLLBACK
-â”‚   â”œâ”€â”€ 09_phpmyadmin_struktur_db.png  # Screenshot phpMyAdmin struktur 8 tabel sistem_laundry
-â”‚   â””â”€â”€ 10_phpmyadmin_data_json.png    # Screenshot phpMyAdmin data kolom JSON tabel layanan
-â”œâ”€â”€ modul11.sql                        # Gabungan seluruh script SQL (01 s.d. 04)
-â”œâ”€â”€ worksheet_modul11.docx             # Kerangka lembar kerja utama praktikum Modul 11
-â””â”€â”€ README.md                          # Dokumentasi struktur proyek
+|-- sql/
+|   |-- 01_database.sql                # Identifikasi DBMS & pembuatan database sistem_laundry
+|   |-- 02_tabel.sql                   # DDL 8 tabel SIM-LAUNDRY (relasional + kolom JSON)
+|   |-- 03_data_awal.sql               # DML data awal kategori, layanan JSON, layanan_objek & transaksi
+|   `-- 04_pengujian_json.sql          # Pengujian JSON_EXTRACT, JSON_SET, JSON_REMOVE, JOIN & ROLLBACK
+|-- dokumentasi/
+|   |-- perbandingan_dbms.pdf          # Laporan perbandingan 3 DBMS (MySQL, PostgreSQL, MongoDB)
+|   |-- perbandingan_dbms.docx         # Dokumen Word perbandingan 3 DBMS
+|   |-- analisis_objek.pdf             # Laporan analisis basis data berorientasi objek
+|   |-- analisis_objek.docx            # Dokumen Word analisis basis data berorientasi objek
+|   |-- lingkup_penerapan.pdf          # Laporan analisis lingkup penerapan SIM-LAUNDRY
+|   |-- lingkup_penerapan.docx         # Dokumen Word analisis lingkup penerapan SIM-LAUNDRY
+|   `-- hasil_pengujian.txt            # Log output eksekusi query MySQL 8.4.3
+|-- diagram/
+|   `-- pemodelan_objek.png            # UML Class Diagram Entitas ERD & Inheritance Layanan SIM-LAUNDRY
+|-- bukti/
+|   |-- 01_identifikasi_dbms.png       # Screenshot CLI identifikasi versi, engine, charset & JSON
+|   |-- 01_identifikasi_dbms_2.png     # Lanjutan identifikasi database aktif
+|   |-- 02_pembuatan_tabel.png         # Screenshot CLI pembuatan tabel relasional & kolom JSON
+|   |-- 02_pembuatan_tabel_2.png       # Lanjutan DDL tabel transaksi & DESCRIBE
+|   |-- 03_insert_data_json.png        # Screenshot CLI pengisian data awal pengguna & kategori
+|   |-- 03_insert_data_json_2.png      # Lanjutan pengisian data awal layanan JSON
+|   |-- 03_insert_data_json_3.png      # Lanjutan pengisian layanan_objek & transaksi pesanan
+|   |-- 03_insert_data_json_4.png      # Hasil SELECT verifikasi data awal
+|   |-- 04_baca_atribut_json.png       # Screenshot CLI JSON_EXTRACT, JSON_UNQUOTE, dan ->>
+|   |-- 05_manipulasi_json.png         # Screenshot CLI JSON_SET & JSON_REMOVE
+|   |-- 06_pencarian_json.png          # Screenshot CLI pencarian atribut JSON & JSON_CONTAINS
+|   |-- 07_fungsi_json_dan_objek.png   # Screenshot CLI JSON_OBJECT, JSON_ARRAY, JSON_VALID, JSON_LENGTH
+|   |-- 07_fungsi_json_dan_objek_2.png # Lanjutan query layanan_objek & JOIN relasional
+|   |-- 08_transaksi_rollback.png      # Screenshot CLI pengujian START TRANSACTION & ROLLBACK
+|   |-- 09_phpmyadmin_struktur_db.png  # Screenshot phpMyAdmin struktur 8 tabel sistem_laundry
+|   |-- 10_phpmyadmin_data_json.png    # Screenshot phpMyAdmin data kolom JSON tabel layanan
+|   `-- 11_git_repository.png          # Screenshot bukti pengelolaan repository Git
+|-- modul11.sql                        # Gabungan seluruh script SQL (01 s.d. 04)
+|-- worksheet_modul11.pdf              # Laporan lembar kerja utama praktikum Modul 11 (PDF)
+|-- worksheet_modul11.docx             # Dokumen Word lembar kerja utama praktikum Modul 11
+`-- README.md                          # Dokumentasi struktur proyek
 ```
 
 ---
